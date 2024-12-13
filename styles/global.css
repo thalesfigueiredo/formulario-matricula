@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-family: 'Poppins', sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
@@ -10,8 +16,37 @@
 
   --surface-primary: #ffffff;
   --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
 
   --stroke-default: #d6d3d1;
   --stroke-highlight: #f3541c;
   --semantic-error: #dc2626;
+}
+
+body {
+  overflow: hidden;
+
+  font: var(--text);
+  color: var(--text-secondary);
+}
+
+h1, h2 {
+  color: var(--text-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
 }
